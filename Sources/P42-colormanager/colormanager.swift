@@ -19,7 +19,6 @@ public struct ColorTheme {
         public let tabBarItems: Color
         public let toolBarItems: Color
         public let navigationText: Color
-        public let navBarContent: Color
         public let tint: Color
         public let stroke: Color
         public let logo: Color
@@ -34,7 +33,6 @@ public struct ColorTheme {
             tabBarItems: Color,
             toolBarItems: Color,
             navigationText: Color,
-            navBarContent: Color,
             tint: Color,
             stroke: Color,
             logo: Color
@@ -48,7 +46,6 @@ public struct ColorTheme {
             self.tabBarItems = tabBarItems
             self.toolBarItems = toolBarItems
             self.navigationText = navigationText
-            self.navBarContent = navBarContent
             self.tint = tint
             self.stroke = stroke
             self.logo = logo
@@ -122,7 +119,6 @@ public extension ColorManager {
         colors.pickerBG
     }
     
-    
     // components
     var tabBarItems: Color {
         colors.tabBarItems
@@ -134,10 +130,6 @@ public extension ColorManager {
 
     var navigationText: Color {
         colors.navigationText
-    }
-    
-    var navBarContent: Color {
-        colors.navBarContent
     }
 
     // ornaments

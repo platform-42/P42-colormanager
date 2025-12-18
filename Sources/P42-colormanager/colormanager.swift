@@ -10,18 +10,19 @@ public struct ColorTheme {
     public struct Variant {
 
         public let background: Color
-        public let groupBoxBackground: Color
+        public let groupBoxBG: Color
+        public let navbarBG: Color
+        public let navigationBG: Color
+        public let tabBarBG: Color
+        public let pickerBG: Color
 
-        public let tabBarBackground: Color
         public let tabBarItems: Color
-
-        public let navigationBackground: Color
+        public let toolBarItems: Color
         public let navigationText: Color
-
+        public let navBarContent: Color
         public let tint: Color
         public let stroke: Color
         public let logo: Color
-        public let pickerBackground: Color
     }
 
     public let light: Variant
@@ -66,30 +67,50 @@ public final class ColorManager {
 @available(iOS 17.0, *)
 public extension ColorManager {
 
+    // background colors
     var background: Color {
         colors.background
     }
 
     var groupBoxBG: Color {
-        colors.groupBoxBackground
+        colors.groupBoxBG
     }
-
+    
+    var navBarBG: Color {
+        colors.navbarBG
+    }
+    
+    var navigationBG: Color {
+        colors.navigationBG
+    }
+    
     var tabBarBG: Color {
-        colors.tabBarBackground
+        colors.tabBarBG
     }
-
+    
+    var pickerBG: Color {
+        colors.pickerBG
+    }
+    
+    
+    // components
     var tabBarItems: Color {
         colors.tabBarItems
     }
-
-    var navigationBG: Color {
-        colors.navigationBackground
+    
+    var toolBarItems: Color {
+        colors.toolBarItems
     }
 
     var navigationText: Color {
         colors.navigationText
     }
+    
+    var navBarContent: Color {
+        colors.navBarContent
+    }
 
+    // ornaments
     var tint: Color {
         colors.tint
     }
@@ -102,7 +123,5 @@ public extension ColorManager {
         colors.logo
     }
 
-    var pickerBG: Color {
-        colors.pickerBackground
-    }
+
 }

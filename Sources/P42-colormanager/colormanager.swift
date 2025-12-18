@@ -23,8 +23,38 @@ public struct ColorTheme {
         public let tint: Color
         public let stroke: Color
         public let logo: Color
+        
+        public init(
+            background: Color,
+            groupBoxBG: Color,
+            navbarBG: Color,
+            navigationBG: Color,
+            tabBarBG: Color,
+            pickerBG: Color,
+            tabBarItems: Color,
+            toolBarItems: Color,
+            navigationText: Color,
+            navBarContent: Color,
+            tint: Color,
+            stroke: Color,
+            logo: Color
+        ) {
+            self.background = background
+            self.groupBoxBG = groupBoxBG
+            self.navbarBG = navbarBG
+            self.navigationBG = navigationBG
+            self.tabBarBG = tabBarBG
+            self.pickerBG = pickerBG
+            self.tabBarItems = tabBarItems
+            self.toolBarItems = toolBarItems
+            self.navigationText = navigationText
+            self.navBarContent = navBarContent
+            self.tint = tint
+            self.stroke = stroke
+            self.logo = logo
+        }
     }
-
+    
     public let light: Variant
     public let dark: Variant
 

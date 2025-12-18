@@ -61,3 +61,48 @@ public final class ColorManager {
         darkMode ? theme.dark : theme.light
     }
 }
+
+
+@available(iOS 17.0, *)
+public extension ColorManager {
+
+    var background: Color {
+        colors.background
+    }
+
+    var groupBoxBG: Color {
+        colors.groupBoxBackground
+    }
+
+    var tabBarBG: Color {
+        colors.tabBarBackground
+    }
+
+    var tabBarItems: Color {
+        colors.tabBarItems
+    }
+
+    var navigationBG: Color {
+        colors.navigationBackground
+    }
+
+    var navigationText: Color {
+        colors.navigationText
+    }
+
+    var tint: Color {
+        colors.tint
+    }
+
+    var stroke: Color {
+        colors.stroke
+    }
+
+    var logo: Color {
+        colors.logo
+    }
+
+    var pickerBG: Color {
+        colors.pickerBackground
+    }
+}

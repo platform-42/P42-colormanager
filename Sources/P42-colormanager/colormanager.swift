@@ -16,7 +16,6 @@ public struct ColorTheme {
         public let tabBarBG: Color
         public let pickerBG: Color
 
-        public let tabBarItems: Color
         public let toolBarItems: Color
         public let navigationText: Color
         public let tint: Color
@@ -30,7 +29,6 @@ public struct ColorTheme {
             navigationBG: Color,
             tabBarBG: Color,
             pickerBG: Color,
-            tabBarItems: Color,
             toolBarItems: Color,
             navigationText: Color,
             tint: Color,
@@ -43,7 +41,6 @@ public struct ColorTheme {
             self.navigationBG = navigationBG
             self.tabBarBG = tabBarBG
             self.pickerBG = pickerBG
-            self.tabBarItems = tabBarItems
             self.toolBarItems = toolBarItems
             self.navigationText = navigationText
             self.tint = tint
@@ -117,11 +114,6 @@ public extension ColorManager {
     
     var pickerBG: Color {
         colors.pickerBG
-    }
-    
-    // components
-    var tabBarItems: Color {
-        colors.tabBarItems
     }
     
     var toolBarItems: Color {

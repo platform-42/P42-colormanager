@@ -11,7 +11,6 @@ public struct ColorTheme {
 
         public let background: Color
         public let groupBoxBG: Color
-        public let navbarBG: Color
         public let navigationBG: Color
         public let tabBarBG: Color
         public let pickerBG: Color
@@ -25,7 +24,6 @@ public struct ColorTheme {
         public init(
             background: Color,
             groupBoxBG: Color,
-            navbarBG: Color,
             navigationBG: Color,
             tabBarBG: Color,
             pickerBG: Color,
@@ -37,7 +35,6 @@ public struct ColorTheme {
         ) {
             self.background = background
             self.groupBoxBG = groupBoxBG
-            self.navbarBG = navbarBG
             self.navigationBG = navigationBG
             self.tabBarBG = tabBarBG
             self.pickerBG = pickerBG
@@ -98,10 +95,6 @@ public extension ColorManager {
 
     var groupBoxBG: Color {
         colors.groupBoxBG
-    }
-    
-    var navBarBG: Color {
-        colors.navbarBG
     }
     
     var navigationBG: Color {
